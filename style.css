@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-section-div {
+  background-color: transparent;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+.navbar-section-div ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  color: white;
+  font-size: larger;
+}
+.navbar-section-div div button {
+  background-color: orangered;
+  color: white;
+  width: 160px;
+  height: 40px;
+  border-radius: 6px;
+  font-size: large;
+  border-color: transparent;
+}
+
+/* HERO SECTION CSS */
+.hero-sect {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.347),
+      rgba(3, 3, 8, 0.593),
+      rgba(0, 0, 0, 0.155)
+    ),
+    url("home-hero.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 80px;
+  margin-top: 10px;
+}
+.hero-sect h3 {
+  background-color: rgba(255, 255, 255, 0.521);
+  border-radius: 20px;
+  width: 320px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: x-large;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding-left: 10px;
+}
+
+.hero-sect > h1 {
+  font-size: 70px;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.hero-sect p {
+  font-size: large;
+  line-height: 25px;
+  width: 40%;
+  margin-bottom: 40px;
+}
+
+/* 
+.hero-sect div button: :nth-child(1){
+} This is to target one out of the same type of tags. It is the 1st button tag out of 2 button tags in this case. */
+
+.hero-sect div button {
+  background-color: orangered;
+  width: 200px;
+  height: 60px;
+  font-size: large;
+  border-radius: 8px;
+  color: white;
+  border-color: transparent;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.hero-sect .hero-btn-watch {
+  background-color: rgba(128, 128, 128, 0.511);
+  border-color: transparent;
+}
+.hero-sect div button:hover {
+  background-color: burlywood;
+}
+/* HERO SECTION ENDS HERE */
+
+/* DEST SECTION */
+
+.dest-section h3 {
+  text-align: center;
+  margin-top: 80px;
+  font-weight: 500;
+  color: orangered;
+  background-color: blanchedalmond;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 9vh;
+  margin-bottom: 45px;
+}
+.dest-flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+}
+
+.dest-flex-container div div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 85px;
+  border-bottom-width: 100px;
+}
+.dest-flex-container div > div {
+  width: 400px;
+}
+
+.dest-flex-container .dest-package-contents {
+  border-style: double;
+  border-color: transparent;
+  background-color: white;
+  width: 240px;
+  height: 200px;
+  border-radius: 100%;
+  text-align: center;
+  align-content: center;
+  position: relative;
+  top: -100px;
+  left: 78px;
+}
+
+/* .dest-flex-container .dest-package-contents2{
+    border-style: double;
+    border-color: transparent;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius:100%;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    top: -80px;
+    left: 100px;
+}
+
+.dest-flex-container .dest-package-contents3{
+    border-style: double;
+    border-color: transparent;
+    background-color: white;
+    width: 200px;
+    height: 200px;
+    border-radius:100%;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    top: -80px;
+    left: 100px;
+    
+} */
+
+.dest-package-contents h4 {
+  color: burlywood;
+  background-color: blanchedalmond;
+  border-radius: 20px;
+  width: 100px;
+  justify-self: center;
+  height: 30px;
+  align-content: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.dest-package-contents h5 {
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.dest-package-contents h6 {
+  font-weight: 100;
+  font-size: larger;
+}
+
+/* ABOUT US SECTION */
+
+.about-us-section {
+  background-color: blanchedalmond;
+}
+.about-us-flex-container {
+  display: flex;
+  /* align-items: center; */
+  padding: 50px;
+}
+.about-us-2nd-child h3 {
+  background-color: beige;
+  color: orangered;
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 834px) {
+  .navbar-section-div ul {
+    display: none;
+  }
+  .navbar-section-div div button {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+  .navbar-section-div {
+    font-size: small;
+  }
+}
+
+/* MEDIA QUERY FOR HERO SECTION */
+@media (max-width: 1024px) {
+  .hero-sect {
+    height: auto;
+  }
+}
+@media (max-width: 900px) {
+  .dest-flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 834px) {
+  .hero-sect h1 {
+    width: 100%;
+  }
+  .hero-sect p {
+    width: 100%;
+  }
+  .hero-sect .hero-btn-watch {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+  .hero-sect h3 {
+    width: 220px;
+    font-size: medium;
+  }
+}
+.hero-sect h1 {
+  font-size: 43px;
+}
